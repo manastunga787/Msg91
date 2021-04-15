@@ -18,7 +18,7 @@ module.exports = function (authKey, senderId, route) {
         throw new Error("MSG91 router Id is not provided.");
     }
 
-    this.send = function (mobileNos, message, callback) {
+    this.send = function (mobileNos, message,dlteId, callback) {
 
         callback = modifyCallbackIfNull(callback);
 
@@ -28,7 +28,7 @@ module.exports = function (authKey, senderId, route) {
 
         var isUnicode = isUnicodeString(message);
 
-        var postData = "authkey=" + authKey + "&sender=" + senderId + "&mobiles=" + mobileNos + "&message=" + message + "&route=" + route;
+        var postData = "authkey=" + authKey + "&sender=" + senderId + "&mobiles=" + mobileNos + "&message=" + message + "&route=" + route +"&DLT_TE_ID="+dlteId;
 
         if(isUnicode){
             postData += "&unicode=1";
