@@ -25,7 +25,7 @@ npm install msg91-templateid --save
 ```javascript
 
 // Provide sender Id that has been approve by DLT
-var msg91 = require("msg91")("API_KEY", "SENDER_ID", "ROUTE_NO" );
+var msg91 = require("msg91-templateid")("API_KEY", "SENDER_ID", "ROUTE_NO" );
 
 
 // Mobile No can be a single number, list or csv string
