@@ -4,7 +4,7 @@
   "private": false,
   "description": "API For MSG91 SMS Gateway. - It is not an official version of MSG91",
   "main": "app.js",
-  "author": "Hiren Soni, Manas Tung",
+  "author": "Hiren Soni, Manas Tunga",
   "license": "ISC",
   "keywords": [
     "msg91 templateid",
@@ -12,5 +12,5 @@
     "API",
     "node.js"
   ],
-  "repository": "https://github.com/manastunga787/xrand/msg91-templateid"
+  "repository": "https://github.com/manastunga787/msg91-templateid"
 }
